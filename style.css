@@ -1,0 +1,36 @@
+/* selettore elemento dropdown uguale a quello di bootstrap */
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+}
+
+/* primo elemento lista (con le immagini playstation) */
+.navbar-expand-lg .navbar-nav .play-menu {
+    display: flex;
+    justify-content: center;
+}
+
+/* elementi dentro a .play-menu (quelli con le immagini playstation + link) */
+.navbar-expand-lg .navbar-nav .play-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+/* elemento lista in basso (dopo la linea) */
+.navbar-expand-lg .navbar-nav .bottom-play-menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* media query per gestire dropdown menu quando c'è l'hamburger menu */
+@media screen and (max-width: 992px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        top: 100%;
+    }
+}
